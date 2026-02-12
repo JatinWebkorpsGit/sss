@@ -20,11 +20,25 @@ A static website for **SS Sports**, a sports shop in Indore.
 7. **Gallery** – Replace the placeholder boxes with real images: use `<img src="your-image.jpg" alt="...">` inside each `.gallery-item` and remove the `<span>`.
 8. **FAQ** – Edit questions/answers to match your shop’s policies.
 
+## SEO (when you have a live domain)
+
+Replace `https://yoursite.com/` with your real website URL in:
+
+- **index.html** – `link rel="canonical"` and the JSON-LD `url` and `sameAs` (if you add social links)
+- **footwear.html, apparel.html, equipment.html, accessories.html** – `link rel="canonical"` and the BreadcrumbList JSON-LD
+- **sitemap.xml** – every `<loc>` URL
+- **robots.txt** – the `Sitemap:` URL
+
+Then submit `yoursite.com/sitemap.xml` in Google Search Console.
+
 ## Files
 
-- `index.html` – Page structure and content  
+- `index.html` – Home page and content  
+- `footwear.html`, `apparel.html`, `equipment.html`, `accessories.html` – Category pages  
 - `styles.css` – Layout and look  
 - `script.js` – Mobile menu, back-to-top, scroll reveal  
 - `favicon.svg` – Browser tab icon  
+- `sitemap.xml` – For search engines (update domain and lastmod when you go live)  
+- `robots.txt` – Crawler instructions (update Sitemap URL when you go live)  
 
 No build step or server required; it’s plain HTML, CSS, and JS.

@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   // Scroll reveal for sections (if reduced-motion not preferred)
   if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-    const revealEls = document.querySelectorAll('.container, .hero-content, .product-grid, .testimonials-grid, .faq-list, .gallery-grid, .brands-grid, .hours-box, .location-box');
+    const revealEls = document.querySelectorAll('.container, .hero-content, .product-grid, .hours-box, .location-box');
     const observer = new IntersectionObserver(
       function (entries) {
         entries.forEach(function (entry) {
