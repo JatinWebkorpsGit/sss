@@ -401,28 +401,47 @@ section h2 {
 
 .items-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(min(100%, 160px), 1fr));
-  gap: 1rem;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 180px), 1fr));
+  gap: 1.25rem;
   margin-top: 1.5rem;
 }
 
 .item-card {
   background: var(--bg-dark);
   border: 1px solid var(--border);
-  border-radius: 10px;
-  padding: 1.25rem;
+  border-radius: 12px;
+  padding: 1.5rem 1.25rem;
   text-align: center;
-  transition: border-color 0.2s;
+  transition: border-color 0.2s, box-shadow 0.2s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100px;
 }
 
 .item-card:hover {
   border-color: var(--accent);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.item-card-link {
+  text-decoration: none;
+  color: inherit;
 }
 
 .item-name {
-  font-weight: 500;
+  font-weight: 600;
   color: var(--text);
-  font-size: 0.95rem;
+  font-size: 1rem;
+  display: block;
+}
+
+.item-hint {
+  display: block;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  margin-top: 0.5rem;
 }
 
 .category-items-note {
