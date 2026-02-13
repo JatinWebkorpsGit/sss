@@ -33,12 +33,14 @@ Then submit `yoursite.com/sitemap.xml` in Google Search Console.
 
 ## Files
 
-- `index.html` – Home page and content  
-- `footwear.html`, `apparel.html`, `equipment.html`, `accessories.html` – Category pages  
+- `index.html` – Home page (about, hours, location, contact, link to products)  
+- `products.html` – Single products page (categories → subcategories → items via hash, e.g. `#footwear`, `#footwear/running-shoes`)  
+- `data.js` – All category/subcategory/item names (edit here to add or change products)  
+- `products.js` – Renders the right view based on URL hash  
 - `styles.css` – Layout and look  
 - `script.js` – Mobile menu, back-to-top, scroll reveal  
 - `favicon.svg` – Browser tab icon  
 - `sitemap.xml` – For search engines (update domain and lastmod when you go live)  
 - `robots.txt` – Crawler instructions (update Sitemap URL when you go live)  
 
-No build step or server required; it’s plain HTML, CSS, and JS.
+No build step or server required; it’s plain HTML, CSS, and JS. To add or edit product names, update `data.js`.
