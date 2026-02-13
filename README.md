@@ -22,14 +22,7 @@ A static website for **SS Sports**, a sports shop in Indore.
 
 ## SEO (when you have a live domain)
 
-Replace `https://yoursite.com/` with your real website URL in:
-
-- **index.html** – `link rel="canonical"` and the JSON-LD `url` and `sameAs` (if you add social links)
-- **footwear.html, apparel.html, equipment.html, accessories.html** – `link rel="canonical"` and the BreadcrumbList JSON-LD
-- **sitemap.xml** – every `<loc>` URL
-- **robots.txt** – the `Sitemap:` URL
-
-Then submit `yoursite.com/sitemap.xml` in Google Search Console.
+The live site URL is **https://sssports.co.in/** and is set in `index.html` (canonical, JSON-LD), `sitemap.xml`, and `robots.txt`. Submit **https://sssports.co.in/sitemap.xml** in [Google Search Console](https://search.google.com/search-console) if you haven’t already.
 
 ## Files
 
